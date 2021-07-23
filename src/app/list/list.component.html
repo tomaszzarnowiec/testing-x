@@ -1,0 +1,4 @@
+<div class="list">
+    <app-list-item *ngFor="let item of listService.list$ | async" [item]="item"
+        (statusChanged)="onStatusChange($event)"></app-list-item>
+</div>
